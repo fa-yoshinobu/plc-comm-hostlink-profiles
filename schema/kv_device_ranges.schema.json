@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/fa-yoshinobu/plc-comm-hostlink-profiles/schema/kv_device_ranges.schema.json",
+  "title": "KEYENCE KV Host Link device range catalog",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "date",
+    "scope",
+    "description",
+    "profiles",
+    "device_range_rows"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "date": {
+      "type": "string"
+    },
+    "scope": {
+      "const": "keyence-kv-hostlink"
+    },
+    "description": {
+      "type": "string"
+    },
+    "policy": {
+      "type": "object"
+    },
+    "evidence_files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "profiles": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/profile"
+      }
+    },
+    "device_range_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/device_range_row"
+      }
+    }
+  },
+  "$defs": {
+    "profile": {
+      "type": "object",
+      "required": [
+        "display_name",
+        "source_label",
+        "vendor",
+        "family",
+        "address_notation"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "display_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "vendor": {
+          "const": "KEYENCE"
+        },
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "address_notation": {
+          "enum": [
+            "native",
+            "xym"
+          ]
+        },
+        "base_profile": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string"
+        }
+      }
+    },
+    "device_range_row": {
+      "type": "object",
+      "required": [
+        "device_type",
+        "notation",
+        "ranges"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "device_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notation": {
+          "enum": [
+            "decimal",
+            "hexadecimal"
+          ]
+        },
+        "ranges": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}
+
