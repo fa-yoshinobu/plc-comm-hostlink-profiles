@@ -12,6 +12,9 @@
 
 ## Unreleased
 
+- Restyled generated profile-reference tables to match the shared SLMP manual
+  style, including generated headers, purpose text, verified-model status,
+  plain table cells, and cell-reading appendices.
 - Shortened XYM profile display names from `(XYM notation)` to `(XYM)` for
   UI selector labels.
 - Added the initial canonical KEYENCE KV Host Link profile and device-range
