@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-10",
+  "scope": "keyence-kv-hostlink",
+  "description": "Negative schema-validation fixture.",
+  "profiles": {
+    "keyence:test": {
+      "display_name": "Test profile",
+      "source_label": "schema negative fixture",
+      "vendor": "KEYENCE",
+      "family": "test",
+      "address_notation": "native"
+    }
+  },
+  "device_range_rows": [
+    {
+      "device_type": "DM",
+      "device_name": "Data memory",
+      "notation": "decimal",
+      "ranges": {
+        "keyence:test": "0-1"
+      },
+      "unexpected_property": true
+    }
+  ]
+}

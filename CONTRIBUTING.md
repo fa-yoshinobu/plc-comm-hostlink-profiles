@@ -10,7 +10,9 @@ This repository is the canonical source for KEYENCE KV Host Link profile data.
 3. Run:
 
    ```powershell
+   python -m pip install -r requirements-dev.txt
    python tools/validate_profiles.py
+   python tools/validate_schema.py
    python tools/generate_profile_tables.py
    ```
 
