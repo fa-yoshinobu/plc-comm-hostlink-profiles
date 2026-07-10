@@ -104,6 +104,10 @@
           "type": "string",
           "minLength": 1
         },
+        "device_name": {
+          "type": "string",
+          "minLength": 1
+        },
         "notation": {
           "enum": [
             "decimal",
@@ -122,4 +126,3 @@
     }
   }
 }
-

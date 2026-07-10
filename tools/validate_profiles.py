@@ -57,6 +57,8 @@ def validate_catalog(payload: dict[str, Any]) -> None:
     for row in rows:
         device_type = row.get("device_type")
         require(isinstance(device_type, str) and device_type, "device_type is required")
+        device_name = row.get("device_name")
+        require(isinstance(device_name, str) and device_name, f"{device_type}: device_name is required")
         require(device_type not in seen_devices, f"duplicate device_type {device_type}")
         seen_devices.add(device_type)
         require(row.get("notation") in {"decimal", "hexadecimal"}, f"{device_type}: invalid notation")

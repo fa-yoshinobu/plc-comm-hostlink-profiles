@@ -47,7 +47,9 @@ address can be read or written on a connected PLC.
 Do not edit generated table files by hand.
 
 ```powershell
+python -m pip install -r requirements-dev.txt
 python tools/validate_profiles.py
+python tools/validate_schema.py
 python tools/generate_profile_tables.py
 ```
 
@@ -62,8 +64,9 @@ python tools/generate_profile_tables.py --check
 Implementation repositories should import a fixed tag and keep fixture tests
 that compare their embedded profile/range data against this repository.
 
-If a JSON schema changes, increment `schema_version` and keep the old tag
-available until all downstream libraries have migrated.
+Additive optional fields keep `schema_version` unchanged. Rename, removal, or
+semantic changes increment `schema_version`; keep the old tag available until
+all downstream libraries have migrated.
 
 ## License
 
@@ -71,4 +74,3 @@ available until all downstream libraries have migrated.
 | --- | --- |
 | License | [MIT](LICENSE) |
 | Canonical data tag | `v1.0.0` or later |
-
