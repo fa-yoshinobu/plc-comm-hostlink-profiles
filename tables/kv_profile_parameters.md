@@ -4,7 +4,7 @@
 
 Generated user-facing reference. Source: device-ranges/kv_device_ranges.json.
 
-Schema 1, date 2026-07-05, scope keyence-kv-hostlink.
+Schema 1, date 2026-07-10, scope keyence-kv-hostlink.
 
 ## Purpose
 
