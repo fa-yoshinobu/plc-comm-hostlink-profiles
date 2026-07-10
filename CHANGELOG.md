@@ -6,8 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-07-10
+
 ### Fixed
 
+- Catalog: Corrected ten device range cells against live PLC hardware and the
+  KEYENCE simulator. `VM` widens to `VM0-9999` on `keyence:kv-nano` and to
+  `VM0-59999` on `keyence:kv-3000` / `keyence:kv-5000`; `Z` widens to `Z1-23` on
+  `keyence:kv-8000`. `CTH` narrows to `CTH0-1` on `keyence:kv-3000-xym` and
+  `keyence:kv-5000-xym`, which also removes an internal inconsistency with their
+  base profiles. The `-xym` notation variants track their base profiles in every
+  case. The printed manuals contain errata for these cells, so the observed
+  device behaviour was adopted. See
+  `evidence/kv_device_ranges_live_verification_20260710.md`.
 - Tooling: Reject duplicate JSON object keys during profile validation.
 - Schema: Define the additive `device_name` row property used by the canonical
   catalog and validate the public catalog plus a negative fixture in CI.

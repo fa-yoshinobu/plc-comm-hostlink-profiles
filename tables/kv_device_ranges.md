@@ -4,7 +4,7 @@
 
 Generated user-facing reference. Source: device-ranges/kv_device_ranges.json.
 
-Schema 1, date 2026-07-05, scope keyence-kv-hostlink.
+Schema 1, date 2026-07-10, scope keyence-kv-hostlink.
 
 ## Purpose
 
@@ -63,10 +63,10 @@ They are catalog data for profile selection, UI address pickers, diagnostics, an
 | ZF | File register | decimal | - | - | ZF000000-ZF131071 | ZF000000-ZF131071 | ZF000000-ZF131071 | ZF000000-ZF131071 | ZF000000-ZF524287 | ZF000000-ZF524287 | ZF000000-ZF524287 | ZF000000-ZF524287 | ZF000000-ZF524287 | ZF000000-ZF524287 |
 | W | Link register | hexadecimal | W0000-W3FFF | W0000-W3FFF | W0000-W3FFF | W0000-W3FFF | W0000-W3FFF | W0000-W3FFF | W0000-W7FFF | W0000-W7FFF | W0000-W7FFF | W0000-W7FFF | W0000-W7FFF | W0000-W7FFF |
 | TM | Temporary data memory | decimal | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 | TM000-TM511 |
-| VM | Work memory | decimal | VM0-9499 | VM0-9499 | VM0-49999 | VM0-49999 | VM0-49999 | VM0-49999 | VM0-63999 | VM0-63999 | VM0-589823 | VM0-589823 | - | - |
+| VM | Work memory | decimal | VM0-9999 | VM0-9999 | VM0-59999 | VM0-59999 | VM0-59999 | VM0-59999 | VM0-63999 | VM0-63999 | VM0-589823 | VM0-589823 | - | - |
 | VB | Work relay | hexadecimal | VB0-1FFF | VB0-1FFF | VB0-3FFF | VB0-3FFF | VB0-3FFF | VB0-3FFF | VB0-F9FF | VB0-F9FF | VB0-F9FF | VB0-F9FF | - | - |
-| Z | Index register | decimal | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-10 | Z1-10 |
-| CTH | High-speed counter | decimal | CTH0-3 | CTH0-3 | CTH0-1 | CTH0-3 | CTH0-1 | CTH0-3 | - | - | - | - | - | - |
+| Z | Index register | decimal | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-12 | Z1-23 | Z1-23 | Z1-10 | Z1-10 |
+| CTH | High-speed counter | decimal | CTH0-3 | CTH0-3 | CTH0-1 | CTH0-1 | CTH0-1 | CTH0-1 | - | - | - | - | - | - |
 | CTC | High-speed counter comparator | decimal | CTC0-7 | CTC0-7 | CTC0-3 | CTC0-3 | CTC0-3 | CTC0-3 | - | - | - | - | - | - |
 | AT | Digital trimmer | decimal | - | - | AT0-7 | AT0-7 | AT0-7 | AT0-7 | AT0-7 | AT0-7 | AT0-7 | AT0-7 | - | - |
 
