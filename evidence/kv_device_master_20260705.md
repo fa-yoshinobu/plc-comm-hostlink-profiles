@@ -12,8 +12,8 @@ device sets recognized by the downstream parsers.
 
 | Manual | File | Role |
 | --- | --- | --- |
-| KV-XLE02 Ethernet Unit User's Manual (L64GB) | `D:\APP\KV Manual\Ethernet Unit KV-XLE02 User's Manual L64GB.pdf` | Host Link chapter 13 device-name table, XYM expression table (13-33). Older unit: does **not** support CTH/CTC, so they are absent from its tables. |
-| KV-8000/7000/5000/3000 CPU User's Manual (O30GB) | `D:\APP\KV Manual\AS_166470_KV-8000_KV-5000_3000_KV-7000_UM_O30GB_WW_GB_2036_1.pdf` | Confirms CTH=04H / CTC=05H (High-speed counter / comparator) and per-model / per-unit availability. |
+| KV-XLE02 Ethernet Unit User's Manual (L64GB) | Maintainer-local PDF copy (not tracked) | Host Link chapter 13 device-name table, XYM expression table (13-33). Older unit: does **not** support CTH/CTC, so they are absent from its tables. |
+| KV-8000/7000/5000/3000 CPU User's Manual (O30GB) | Maintainer-local PDF copy (not tracked) | Confirms CTH=04H / CTC=05H (High-speed counter / comparator) and per-model / per-unit availability. |
 
 ## Host Link Device Master (native expression)
 
